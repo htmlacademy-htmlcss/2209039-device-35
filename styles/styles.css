@@ -93,11 +93,22 @@ body {
   padding-right: 10px;
 }
 
-.header-search-input:focus {
-  stroke: #AF4FFF;
-  stroke-dasharray: 2px;
-  stroke-width: 2px;
-  stroke-linecap: butt;
+.header-search-input:disabled {
+  opacity: 30%;
+}
+
+.header-search-button:hover {
+  background-color: var(--main-title-color);
+  color: #ffffff;
+}
+
+.header-search-button:active {
+  background-color: var(--main-title-color);
+  color: rgba(255 255, 255, 0.3);
+}
+
+.header-search-button:disabled {
+  opacity: 30%;
 }
 
 .user-navigation-item {
@@ -140,6 +151,11 @@ body {
   background-image: url(../images/header/log-in-icon.svg);
   background-repeat: no-repeat;
   background-position: left center;
+}
+
+.log-out-button {
+  margin-left: 28px;
+  opacity: 30%;
 }
 
 .compare-button {
@@ -312,6 +328,20 @@ body {
   color: var(--main-title-color);
 }
 
+.user-navigation-link:hover {
+  opacity: 60%;
+}
+
+.user-navigation-link:active {
+  opacity: 30%;
+}
+
+.user-navigation-link:focus {
+  border: transparent;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 10px
+}
+
 .catalog-navigation {
   position: absolute;
   width: 100%;
@@ -321,6 +351,7 @@ body {
 .catalog-navigation-list {
   margin: 0;
   display: flex;
+  min-height: 52px;
   align-items: baseline;
   flex-wrap: wrap;
   list-style: none;
@@ -339,6 +370,19 @@ body {
   letter-spacing: 0.2em;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+.catalog-navigation-link:hover {
+  opacity: 60%;
+}
+
+.catalog-navigation-link:active {
+  opacity: 30%;
+}
+
+.catalog-navigation-link:focus {
+  border: transparent;
+  outline: 2px solid #AF4FFF;
 }
 
 .catalog-navigation-item-delivery {
@@ -376,6 +420,19 @@ body {
   text-decoration: none;
 }
 
+.hidden-catalog-link:hover {
+  opacity: 60%;
+}
+
+.hidden-catalog-link:active {
+  opacity: 30%;
+}
+
+.hidden-catalog-link:focus {
+  border:none;
+  outline: 2px solid #AF4FFF;
+}
+
 .hidden-catalog-list {
   display: none;
 }
@@ -402,17 +459,43 @@ body {
   z-index: 2;
 }
 
+.hidden-catalog-button:hover {
+  background-image: url(../images/header/plus-button-black.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.hidden-catalog-button:active {
+  background-image: url(../images/header/minus-button-black.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.hidden-catalog-button:focus {
+  border: none;
+  outline: 2px solid #AF4FFF;
+}
+
 .hidden-catalog-item {
   margin: 0;
   margin-bottom: 33px;
 }
 
+.popular-product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .product-number {
+  min-width: 212px;
+  min-height: 212px;
   font-weight: 700;
   font-size: 180px;
   line-height: 30px;
   color: #ffffff;
   background-color: #FFE17F;
+  margin-left: auto;
+  flex-grow: 1;
 }
 
 .product-slogan {
