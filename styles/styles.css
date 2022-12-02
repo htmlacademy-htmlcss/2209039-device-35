@@ -705,7 +705,23 @@ body {
   color: var(--main-title-color);
   text-decoration: none;
   padding: 0 38px;
-  background: linear-gradient(to bottom, #ffffff 0 30%, #FFE17F 30% 70%, #ffffff 70% 100%);
+  background: linear-gradient(to top, #ffffff 0 40%, #FFE17F 40% 60%, #ffffff 60% 100%);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.button:hover {
+  background: linear-gradient(to top, #FFE17F 0 100%);
+}
+
+.button:active {
+  background: linear-gradient(to top, #FFCC33 0 100%);
+}
+
+.button:focus {
+  border: none;
+  outline: 2px solid #AF4FFF;
 }
 
 .feature-wrapper {
