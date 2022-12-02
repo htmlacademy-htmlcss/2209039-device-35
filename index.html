@@ -15,17 +15,23 @@
         </a>
         <nav class="user-navigation">
           <ul class="user-navigation-list">
-            <li class="user-navigation-item">
+            <li class="user-navigation-item header-search-form-item">
               <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
-                <label class="header-search-label visually-hidden" for="header-search">Поиск по сайту</label>
-                <input class="header-search-input" id="header-search" type="text" placeholder="Поиск по сайту" name="header-search" required>
-                <button class="header-search-button" type="submit">Найти</button>
+                  <label class="header-search-label visually-hidden" for="header-search">Поиск по сайту</label>
+                    <input class="header-search-input" id="header-search" type="text" placeholder="Поиск по сайту" name="header-search" required>
+                  <button class="header-search-button" type="submit">Найти</button>
               </form>
             </li>
             <li class="user-navigation-item">
               <a class="user-navigation-link log-in-button" href="#">
                 Войти
               </a>
+            </li>
+            <li class="user-navigation-item" style="display: none;">
+              <a class="user-navigation-link log-in-button logged-on" href="#">
+                Коля Петухов
+              </a>
+              <a class="user-navigation-link log-out-button" href="#">Выйти</a>
             </li>
             <li class="user-navigation-item user-navigation-item-compare">
               <a class="user-navigation-link compare-button" href="#">
@@ -41,7 +47,7 @@
                 <ul class="basket-products-list">
                   <li class="basket-products-item">
                     <a class="basket-products-link basket-products-link-amateur" href="#">
-                      Любительская<br>селфи-палка
+                      <span>Любительская<br>селфи-палка</span>
                     </a>
                     <button class="tooltip-close-button" type="button">
                       <svg class="tooltip-close-button-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
@@ -51,7 +57,7 @@
                   </li>
                   <li class="basket-products-item">
                     <a class="basket-products-link basket-products-link-pro" href="#">
-                      Профессиональная селфи-палка
+                      <span style="display: inline-block;">Профессиональная селфи-палка</span>
                     </a>
                     <button class="tooltip-close-button" type="button">
                       <svg class="tooltip-close-button-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
@@ -117,19 +123,12 @@
       <h1 class="visually-hidden">Девайс. Главная страница.</h1>
       <section class="product-slider">
         <h2 class="visually-hidden">Популярные товары</h2>
-          <div class="popular-product popular-copter">
-            <button class="previous-button" type="button"><span class="visually-hidden">Предыдущий товар</span></button>
-            <img src="./images/index/popular-products/copter.png" width="560" height="560" alt="Модель квадрокоптера.">
-            <button class="next-button" type="button"><span class="visually-hidden">Следующий товар</span></button>
-            <span class="product-number">01</span>
-            <b class="product-slogan">Порхает как бабочка, жалит как пчела!</b>
-            <p class="product-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-            </p>
-            <a class="button more-button" href="#">Подробнее</a>
-            <b class="feature">800 м</b>
-            <p class="feature-description">Дальность полета</p>
-            <b class="feature">50 м</b>
-            <p class="feature-description">Радиус поражения</p>
+        <div class="product-slider-wrapper">
+          <button class="previous-button" type="button"><span class="visually-hidden">Предыдущий товар</span></button>
+          <button class="next-button" type="button"><span class="visually-hidden">Следующий товар</span></button>
+            <img class="product-image" src="./images/index/popular-products/copter.png" width="560" height="560" alt="Модель квадрокоптера.">
+            <img class="visually-hidden" src="./images/index/popular-products/fitness-bracelet.png" width="560" height="560" alt="Модель фитнес-браслета.">
+            <img class="visually-hidden" src="./images/index/popular-products/selfie-stick.png" width="560" height="560" alt="Модель фитнес-браслета.">
             <ol class="slider-pagination">
               <li>
                 <button class="slider-pagination-button slider-pagination-button-current" type="button"><span class="visually-hidden">1 товар</span>
@@ -144,62 +143,55 @@
                 </button>
               </li>
             </ol>
+           </div>
+          <div class="product-description-wrapper popular-copter">
+            <span class="product-number">01</span>
+            <b class="product-slogan">Порхает как бабочка, жалит как пчела!</b>
+            <p class="product-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+            </p>
+            <a class="button more-button" href="#">Подробнее</a>
+            <div class="feature-wrapper">
+              <div>
+                <b class="feature">800 м</b>
+                <p class="feature-description">Дальность полета</p>
+              </div>
+              <div>
+                <b class="feature">50 м</b>
+                <p class="feature-description">Радиус поражения</p>
+              </div>
+            </div>
           </div>
-          <div class="popular-product popular-bracelet visually-hidden">
+          <div class="product-description-wrapper popular-bracelet visually-hidden">
             <span class="product-number">02</span>
-            <button class="previous-button" type="button"><span class="visually-hidden">Предыдущий товар</span></button>
-            <img src="./images/index/popular-products/fitness-bracelet.png" width="560" height="560" alt="Модель фитнес-браслета.">
-            <button class="next-button" type="button"><span class="visually-hidden">Следующий товар</span></button>
             <b class="product-slogan">Худеем правильно!</b>
             <p class="product-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
             <a class="button more-button" href="#">Подробнее</a>
-            <b class="feature">48 часов</b>
-            <p class="feature-description">Без подзарядки</p>
-            <ol class="slider-pagination">
-              <li>
-                <button class="slider-pagination-button" type="button"><span class="visually-hidden">1 товар</span>
-                </button>
-              </li>
-              <li>
-                <button class="slider-pagination-button slider-pagination-button-current" type="button"><span class="visually-hidden">2 товар</span>
-                </button>
-              </li>
-              <li>
-                <button class="slider-pagination-button" type="button"><span class="visually-hidden">3 товар</span>
-                </button>
-              </li>
-            </ol>
+            <div class="feature-wrapper">
+              <b class="feature">48 часов</b>
+              <p class="feature-description">Без подзарядки</p>
+            </div>
           </div>
-          <div class="popular-product popular-selfie visually-hidden">
+          <div class="product-description-wrapper popular-selfie visually-hidden">
             <span class="product-number">03</span>
-            <button class="previous-button" type="button"><span class="visually-hidden">Предыдущий товар</span></button>
-            <img src="./images/index/popular-products/selfie-stick.png" width="560" height="560" alt="Модель фитнес-браслета.">
-            <button class="next-button" type="button"><span class="visually-hidden">Следующий товар</span></button>
             <b class="product-slogan">Делай селфи, как Бен Стиллер! </b>
             <p class="product-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
             </p>
             <a class="button more-button" href="#">Подробнее</a>
-            <b class="feature">8,5 м</b>
-            <p class="feature-description">Длина палки</p>
-            <b class="feature">5 кг</b>
-            <p class="feature-description">Вес палки</p>
-            <b class="feature">Карбон</b>
-            <p class="feature-description">Материал</p>
-            <ol class="slider-pagination">
-              <li>
-                <button class="slider-pagination-button" type="button"><span class="visually-hidden">1 товар</span>
-                </button>
-              </li>
-              <li>
-                <button class="slider-pagination-button" type="button"><span class="visually-hidden">2 товар</span>
-                </button>
-              </li>
-              <li>
-                <button class="slider-pagination-button slider-pagination-button-current" type="button"><span class="visually-hidden">3 товар</span>
-                </button>
-              </li>
-            </ol>
+            <div class="feature-wrapper">
+              <div>
+                <b class="feature">8,5 м</b>
+                <p class="feature-description">Длина палки</p>
+              </div>
+              <div>
+                <b class="feature">5 кг</b>
+                <p class="feature-description">Вес палки</p>
+              </div>
+              <div>
+                <b class="feature">Карбон</b>
+                <p class="feature-description">Материал</p>
+              </div>
+            </div>
           </div>
         </section>
         <section class="products-type-links">
