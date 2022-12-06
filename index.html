@@ -17,9 +17,11 @@
           <ul class="user-navigation-list">
             <li class="user-navigation-item header-search-form-item">
               <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
-                  <label class="header-search-label visually-hidden" for="header-search">Поиск по сайту</label>
-                    <input class="header-search-input" id="header-search" type="text" placeholder="Поиск по сайту" name="header-search" required>
-                  <button class="header-search-button" type="submit">Найти</button>
+                <label class="header-search-label" for="header-search">
+                  <input class="header-search-input" id="header-search" type="text" placeholder="Поиск по сайту" name="header-search" required>
+                  <span class="visually-hidden">Поиск по сайту</span>
+                </label>
+                <button class="header-search-button" type="submit">Найти</button>
               </form>
             </li>
             <li class="user-navigation-item">
@@ -126,10 +128,8 @@
         <div class="product-slider-wrapper">
           <button class="previous-button" type="button"><span class="visually-hidden">Предыдущий товар</span></button>
           <button class="next-button" type="button"><span class="visually-hidden">Следующий товар</span></button>
-            <img class="product-image" src="./images/index/popular-products/copter.png" width="560" height="560" alt="Модель квадрокоптера.">
-            <img class="visually-hidden" src="./images/index/popular-products/fitness-bracelet.png" width="560" height="560" alt="Модель фитнес-браслета.">
-            <img class="visually-hidden" src="./images/index/popular-products/selfie-stick.png" width="560" height="560" alt="Модель фитнес-браслета.">
-            <ol class="slider-pagination">
+           <img class="product-image" src="./images/index/popular-products/copter.png" width="560" height="560" alt="Модель квадрокоптера.">
+           <ol class="slider-pagination">
               <li>
                 <button class="slider-pagination-button slider-pagination-button-current" type="button"><span class="visually-hidden">1 товар</span>
                 </button>
@@ -143,8 +143,7 @@
                 </button>
               </li>
             </ol>
-           </div>
-          <div class="product-description-wrapper popular-copter">
+          <div class="product-description-wrapper">
             <span class="product-number">01</span>
             <b class="product-slogan">Порхает как бабочка, жалит как пчела!</b>
             <p class="product-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
@@ -161,20 +160,60 @@
               </div>
             </div>
           </div>
-          <div class="product-description-wrapper popular-bracelet visually-hidden">
+        </div>
+        <div class="product-slider-wrapper visually-hidden">
+          <button class="previous-button" type="button"><span class="visually-hidden">Предыдущий товар</span></button>
+          <button class="next-button" type="button"><span class="visually-hidden">Следующий товар</span></button>
+           <img class="product-image" src="./images/index/popular-products/fitness-bracelet.png" width="560" height="560" alt="Фитнес-браслет.">
+           <ol class="slider-pagination">
+              <li>
+                <button class="slider-pagination-button" type="button"><span class="visually-hidden">1 товар</span>
+                </button>
+              </li>
+              <li>
+                <button class="slider-pagination-button  slider-pagination-button-current" type="button"><span class="visually-hidden">2 товар</span>
+                </button>
+              </li>
+              <li>
+                <button class="slider-pagination-button" type="button"><span class="visually-hidden">3 товар</span>
+                </button>
+              </li>
+            </ol>
+          <div class="product-description-wrapper">
             <span class="product-number">02</span>
-            <b class="product-slogan">Худеем правильно!</b>
+            <b class="product-slogan">Худеем<br>правильно!</b>
             <p class="product-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
             <a class="button more-button" href="#">Подробнее</a>
             <div class="feature-wrapper">
-              <b class="feature">48 часов</b>
-              <p class="feature-description">Без подзарядки</p>
+              <div>
+                <b class="feature">48 часов</b>
+                <p class="feature-description">Без подзарядки</p>
+              </div>
             </div>
           </div>
-          <div class="product-description-wrapper popular-selfie visually-hidden">
+        </div>
+        <div class="product-slider-wrapper visually-hidden">
+          <button class="previous-button" type="button"><span class="visually-hidden">Предыдущий товар</span></button>
+          <button class="next-button" type="button"><span class="visually-hidden">Следующий товар</span></button>
+           <img class="product-image" src="./images/index/popular-products/selfie-stick.png" width="560" height="560" alt="Селфи-палка.">
+           <ol class="slider-pagination">
+              <li>
+                <button class="slider-pagination-button" type="button"><span class="visually-hidden">1 товар</span>
+                </button>
+              </li>
+              <li>
+                <button class="slider-pagination-button" type="button"><span class="visually-hidden">2 товар</span>
+                </button>
+              </li>
+              <li>
+                <button class="slider-pagination-button slider-pagination-button-current" type="button"><span class="visually-hidden">3 товар</span>
+                </button>
+              </li>
+            </ol>
+          <div class="product-description-wrapper">
             <span class="product-number">03</span>
-            <b class="product-slogan">Делай селфи, как Бен Стиллер! </b>
+            <b class="product-slogan">Делай селфи,<br>как Бен Стиллер! </b>
             <p class="product-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
             </p>
             <a class="button more-button" href="#">Подробнее</a>
@@ -193,46 +232,45 @@
               </div>
             </div>
           </div>
+        </div>
         </section>
-        <section class="products-type-links">
+        <section class="product-type-links">
           <h2 class="visually-hidden">Товары по категориям</h2>
-          <ul class="products-type-list">
+          <ul class="product-type-list">
             <li class="product-type-item">
-              <a class="product-type-link" href="#">
+              <a class="product-type-link link-virtual-reality" href="#">
                 Виртуальная реальность
               </a>
             </li>
             <li class="product-type-item">
-              <a class="product-type-link" href="./catalog.html">
-                Моноподы для селфи
+              <a class="product-type-link link-monopodes" href="./catalog.html">
+                Моноподы<br>для селфи
               </a>
             </li>
             <li class="product-type-item">
-              <a class="product-type-link" href="#">
+              <a class="product-type-link link-action-cameras" href="#">
                 Экшн-камеры
               </a>
             </li>
             <li class="product-type-item">
-              <a class="product-type-link" href="#">
+              <a class="product-type-link link-fitness" href="#">
                 Фитнес-браслеты
               </a>
             </li>
             <li class="product-type-item">
-              <a class="product-type-link" href="#">Умные часы</a>
+              <a class="product-type-link link-smart-watch" href="#">Умные часы</a>
             </li>
             <li class="product-type-item">
-              <a class="product-type-link" href="#">Квадрокоптеры</a>
+              <a class="product-type-link link-copters" href="#">Квадрокоптеры</a>
             </li>
           </ul>
       </section>
       <section class="delivery">
         <div class="delivery-section-wrapper">
-          <h2 class="delivery-section-name">Доставка</h2>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          <aside>
+          <aside class="delivery-aside">
             <nav class="delivery-navigation">
               <ul class="delivery-navigation-list">
-                <li class="delivery-navigation-item">
+                <li class="delivery-navigation-item delivery-navigation-current-item">
                   <a class="button delivery-navigation-link delivery-navigation-current" href="#">Доставка</a>
                 </li>
                 <li class="delivery-navigation-item">
@@ -242,32 +280,36 @@
                   <a class="button delivery-navigation-link" href="#">Кредит</a>
                 </li>
               </ul>
-            </nav>
+              </nav>
           </aside>
+          <div class="delivery-paragraph-wrapper">
+            <h2 class="delivery-section-name">Доставка</h2>
+            <p class="delivery-section-description">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь<br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
         </div>
-        <div class="delivery-section-wrapper visually-hidden">
-          <h2 class="delivery-section-name">Гарантия</h2>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          <aside>
+        <div class="guarantee-section-wrapper visually-hidden">
+          <aside class="delivery-aside">
             <nav class="delivery-navigation">
               <ul class="delivery-navigation-list">
                 <li class="delivery-navigation-item">
                   <a class="button delivery-navigation-link" href="#">Доставка</a>
                 </li>
-                <li class="delivery-navigation-item">
+                <li class="delivery-navigation-item delivery-navigation-current-item">
                   <a class="button delivery-navigation-link delivery-navigation-current" href="#">Гарантия</a>
                 </li>
                 <li class="delivery-navigation-item">
                   <a class="button delivery-navigation-link" href="#">Кредит</a>
                 </li>
               </ul>
-            </nav>
+              </nav>
           </aside>
+          <div class="guarantee-paragraph-wrapper">
+            <h2 class="delivery-section-name">Гарантия</h2>
+            <p class="delivery-section-description">Если из-за возгорания купленного у нас товара у вас<br>сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+          </div>
         </div>
-        <div class="delivery-section-wrapper visually-hidden">
-          <h2 class="delivery-section-name">Кредит</h2>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          <aside>
+        <div class="credit-section-wrapper visually-hidden">
+          <aside class="delivery-aside">
             <nav class="delivery-navigation">
               <ul class="delivery-navigation-list">
                 <li class="delivery-navigation-item">
@@ -276,14 +318,22 @@
                 <li class="delivery-navigation-item">
                   <a class="button delivery-navigation-link" href="#">Гарантия</a>
                 </li>
-                <li class="delivery-navigation-item">
+                <li class="delivery-navigation-item delivery-navigation-current-item">
                   <a class="button delivery-navigation-link delivery-navigation-current" href="#">Кредит</a>
                 </li>
               </ul>
-            </nav>
+              </nav>
           </aside>
+          <div class="credit-paragraph-wrapper">
+            <h2 class="delivery-section-name">Кредит</h2>
+            <p class="delivery-section-description">Залезть в долговую яму стало проще! Кредитные<br>консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для банка, разумеется.</p>
+          </div>
         </div>
-        <a class="button-form" href="#"><span>Доставим редкий товар под заказ</span></a>
+        <div class="button-form-wrapper">
+          <a class="button-form" href="#"><span class="button-form-text">Доставим редкий товар под заказ</span>
+            <p class="button-form-i-icon"></p>
+          </a>
+        </div>
       </section>
       <section class="about-us">
         <h2>О нас</h2>
