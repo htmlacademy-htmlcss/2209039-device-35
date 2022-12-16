@@ -47,7 +47,7 @@
                 Корзина
                 <span class="basket-number">2</span>
               </a>
-              <div class="tooltip">
+              <div class="tooltip-header">
                 <ul class="basket-products-list">
                   <li class="basket-products-item">
                     <a class="basket-products-link basket-products-link-amateur" href="#">
@@ -375,7 +375,7 @@
             <div class="subscribe-form-wrapper">
                 <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="subscribe">Введите e-mail</label>
-                  <input class="subscribe-input" type="text" name="e-mail" id="subscribe" placeholder="Ваш e-mail" required>
+                  <input class="subscribe-input" type="email" name="e-mail" id="subscribe" placeholder="Ваш e-mail" required>
                 <button class="subscribe-button" type="submit">Подписаться</button>
               </form>
               <p class="this-is-free">Это бесплатно</p>
@@ -448,28 +448,25 @@
       </div>
     </footer>
     <div class="modal-form-container">
-      <div class="modal-form">
+      <div class="modal-form-wrapper">
         <h2 class="modal-title">Доставка под заказ</h2>
         <button class="modal-close-button" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <label class="modal-label modal-label-name">Ваше имя:
-            <input class="modal-inupt-name" type="text" name="name" placeholder="Введите имя">
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="modal-label modal-label-name">Ваше имя:<br>
+            <input class="modal-input modal-input-name" type="text" name="name" placeholder="Введите имя" required>
             <span class="underinput-sign">Добавьте имя</span>
           </label>
-          <label class="modal-label modal-label-name">Ваш e-mail:
-            <input class="modal-input-email" type="text" name="name" placeholder="почта">
+          <label class="modal-label modal-label-email">Ваш e-mail:<br>
+            <input class="modal-input modal-input-email" type="email" name="name" placeholder="почта" required>
             <span class="underinput-sign wrong-email">Забавный у вас адрес</span>
           </label>
-          <label class="modal-label modal-label-name">Что нужно привезти:
-            <input class="modal-input-delivery" type="text" name="name" placeholder="В свободной форме">
+          <label class="modal-label modal-label-name">Что нужно привезти:<br>
+            <input class="modal-input modal-input-delivery" type="text" name="name" placeholder="В свободной форме" required>
           </label>
-          <div class="modal-quantity-container">
-            <label class="modal-quantity-label" for="q-input">Количество:</label>
-            <span class="tooltip">
-              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
-              </button>
-            </span>
+          <div class="modal-label modal-quantity-container">
+            <label class="modal-quantity-label" for="q-input">Количество:<button type="button" class="footer-tooltip-button"><span class="footer-tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+            </button>
+            </label>
             <button class="modal-quantity-button" type="button" value="less"></button>
             <input class="modal-quantity-input" type="text" id="q-input" placeholder="1">
             <button class="modal-quantity-button" type="button" value="more"></button>
