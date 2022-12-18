@@ -464,12 +464,15 @@
             <input class="modal-input modal-input-delivery" type="text" name="name" placeholder="В свободной форме" required>
           </label>
           <div class="modal-label modal-quantity-container">
-            <label class="modal-quantity-label" for="q-input">Количество:<button type="button" class="footer-tooltip-button"><span class="footer-tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
-            </button>
+            <label class="modal-quantity-label">Количество:
             </label>
-            <button class="modal-quantity-button" type="button" value="less"></button>
-            <input class="modal-quantity-input" type="text" id="q-input" placeholder="1">
-            <button class="modal-quantity-button" type="button" value="more"></button>
+            <button type="button" class="footer-tooltip-button"><span class="visually-hidden">Подсказка</span><span class="footer-tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+            </button>
+            <div class="modal-quantity-buttons-wrapper">
+              <button class="modal-quantity-button" type="button" value="less"></button>
+              <input class="modal-quantity-input" type="text" id="quantity-input" placeholder="1">
+              <button class="modal-quantity-button" type="button" value="more"></button>
+            </div>
           </div>
           <button class="button modal-send-button" type="submit">Отправить</button>
         </form>
