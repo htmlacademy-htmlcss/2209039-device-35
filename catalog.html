@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
   </head>
   <body>
     <header>
@@ -77,7 +79,7 @@
             </li>
           </ul>
         </nav>
-        <nav class="catalog-navigation">
+        <nav class="catalog-navigation catalog-navigation-products-page">
           <ul class="catalog-navigation-list">
             <li class="catalog-navigation-item hidden-catalog-button-item">
               <button class="hidden-catalog-button" type="button">Каталог товаров</button>
@@ -143,7 +145,7 @@
         <div class="products-wrapper">
           <section class="filter">
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <h2 class="filter-title">фильтр:</h2>
+            <h3 class="filter-title">фильтр:</h3>
             <div class="range">
               <b class="fieldset-title">Стоимость</b>
               <div class="range-scale">
@@ -221,76 +223,68 @@
           </section>
           <div class="product-catalog-wrapper">
             <section class="sorting">
-          <h2 class="sorting-title">сортировка:</h2>
+          <h3 class="sorting-title">сортировка:</h3>
           <select class="select-control">
             <option value="popular">Популярные</option>
             <option value="expensive">Дорогие</option>
             <option value="cheap">Дешевые</option>
           </select>
           <div class="sort-button-container">
-            <a class="sort-button" href="#"><span class="visually-hidden">Сортировка сначала</span></a>
-            <a class="sort-button sort-button-down" href="#"><span class="visually-hidden">Сортировка с конца</span></a>
+            <button class="sort-button" type="button"><span class="visually-hidden">Сортировка сначала</span></button>
+            <button class="sort-button sort-button-down" type="button"><span class="visually-hidden">Сортировка с конца</span></button>
           </div>
             </section>
             <section class="cards">
-          <h2 class="visually-hidden">Карточки товаров</h2>
+          <h3 class="visually-hidden">Карточки товаров</h3>
           <ul class="cards-list">
-            <li>
-              <a class="card-item" href="#">
-                <div class="card-hover">
-                  <button class="button card-more-button" type="button">Подробнее</button>
-                </div>
+            <li class="card-item">
+                <a class="card-hover" tabindex="0">
+                  <span class="button card-more-button">Подробнее</span>
+                </a>
                 <img class="card-image" src="./images/catalog/product-1.png" width="360" height="380" alt="Любительская селфи-палка.">
                 <div class="card-sign-wrapper">
                   <b class="card-name">Любительская<br>селфи-палка</b>
                   <span class="card-price">500 ₽</span>
                 </div>
-              </a>
             </li>
-            <li>
-              <a class="card-item" href="#">
-                <div class="card-hover">
-                  <button class="button card-more-button" type="button">Подробнее</button>
-                </div>
+            <li class="card-item">
+                <a class="card-hover" tabindex="0">
+                  <span class="button card-more-button">Подробнее</span>
+                </a>
                 <img class="card-image" src="./images/catalog/product-2.png" width="360" height="380" alt="Профессиональная селфи-палка.">
                 <div class="card-sign-wrapper">
                   <b class="card-name">Профессиональная<br>селфи-палка</b>
                   <span class="card-price">1 500 ₽</span>
                 </div>
-              </a>
             </li>
-            <li>
-              <a class="card-item" href="#">
-                <div class="card-hover">
-                  <button class="button card-more-button" type="button">Подробнее</button>
-                </div>
+            <li class="card-item">
+                <a class="card-hover" tabindex="0">
+                  <span class="button card-more-button">Подробнее</span>
+                </a>
                 <img class="card-image" src="./images/catalog/product-3.png" width="360" height="380" alt="Непотопляемая селфи-палка.">
                 <div class="card-sign-wrapper">
                   <b class="card-name">Непотопляемая<br>селфи-палка</b>
                   <span class="card-price">2 500 ₽</span>
                 </div>
-              </a>
             </li>
-            <li>
-              <a class="card-item" href="#">
-                <div class="card-hover">
-                  <button class="button card-more-button" type="button">Подробнее</button>
-                </div>
-                <img class="card-image" src="./images/catalog/product-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной».">
+            <li class="card-item">
+              <a class="card-hover" tabindex="0">
+                <span class="button card-more-button">Подробнее</span>
+              </a>
+              <img class="card-image" src="./images/catalog/product-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной».">
                 <div class="card-sign-wrapper">
                   <b class="card-name">Селфи-палка «Следуй за мной»</b>
                   <span class="card-price">1 500 ₽</span>
                 </div>
-              </a>
-              </li>
+          </li>
           </ul>
           <button class="show-more-button" type="button">Загрузить ещЁ</button>
           <section class="pagination">
-            <h2 class="visually-hidden">Пагинация</h2>
+            <h3 class="visually-hidden">Пагинация</h3>
             <a class="go-back-link" href="#">Назад</a>
             <ul class="pagination-list">
               <li class="pagination-item">
-                <a class="pagination-link" href="#">1</a>
+                <a class="pagination-link pagination-link-current" href="#">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>

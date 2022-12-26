@@ -42,6 +42,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .button {
@@ -473,6 +474,10 @@ body {
 .catalog-navigation {
   position: relative;
   width: 100%;
+}
+
+.catalog-navigation-products-page {
+ min-height:  73px;
 }
 
 .catalog-navigation-list {
@@ -1244,6 +1249,7 @@ body {
   padding-bottom: 61px;
   width: 100%;
   background-color: #444444;
+  flex-grow: 1;
 }
 
 .page-footer-wrapper {
@@ -2142,6 +2148,9 @@ body {
 
 .sort-button {
   display: inline-block;
+  border: none;
+  cursor: pointer;
+  margin: 0;
   width: 11px;
   height: 10px;
   padding: 12px;
@@ -2198,21 +2207,43 @@ body {
 }
 
 .card-hover {
-  display: none;
   position: absolute;
+  display: flex;
   width: 360px;
   height: 380px;
-  background-color: rgba(240, 240, 240, 0.8);
+  background-color: transparent;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.card-hover-new {
+  background-image: url(../images/catalog/new-product-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 273px 27px;
+}
+
+.card-hover-new:hover {
+  background-image: url(../images/catalog/new-product-icon-hover.svg);
+  background-repeat: no-repeat;
+  background-position: 273px 27px;
+}
+
+.card-more-button {
+  display: none;
 }
 
 .card-item:hover .card-name {
   opacity: 0.6;
 }
 
-.card-item:hover .card-hover {
+.card-hover:hover {
+  display: flex;
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
+.card-hover:hover .card-more-button {
   display: flex;
 }
 
@@ -2224,8 +2255,12 @@ body {
   opacity: 0.3;
 }
 
-.card-item:focus {
+.card-item:focus-within {
   outline: 2px solid #AF4FFF;
+}
+
+.card-hover:focus {
+  outline: none;
 }
 
 .card-item:focus-visible .card-more-button {
@@ -2278,6 +2313,10 @@ body {
   text-decoration: none;
 }
 
+.pagination-link-current {
+  opacity: 0.6;
+}
+
 .go-back-link, .go-forward-link {
   font-family: 'Raleway';
   font-weight: 800;
@@ -2288,6 +2327,21 @@ body {
   color: var(--main-title-color);
   padding: 25px;
   text-decoration: none;
+}
+
+.go-back-link:hover, .go-forward-link:hover {
+  background-color: #DCDCDC;
+}
+
+.go-back-link:active, .go-forward-link:active {
+  background-color: #DCDCDC;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.go-back-link:focus, .go-forward-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 1px;
+  border: none;
 }
 
 .pagination-list {
