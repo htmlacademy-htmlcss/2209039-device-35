@@ -231,11 +231,6 @@ body {
   background-position: left center;
 }
 
-.log-out-button {
-  margin-left: 28px;
-  opacity: 30%;
-}
-
 .compare-button {
   padding-left: 22px;
   background-image: url(../images/header/compare-icon.svg);
@@ -609,6 +604,12 @@ body {
 .hidden-catalog-item {
   margin: 0;
   margin-bottom: 33px;
+}
+
+
+.log-out-button {
+  margin-left: 28px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .product-slider {
