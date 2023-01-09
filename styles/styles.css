@@ -1258,7 +1258,6 @@ body {
   margin: 0 auto;
   max-width: 1440px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   min-height: 265px;
   padding: 0 140px;
@@ -1313,6 +1312,7 @@ body {
 }
 
 .navigation-social {
+  max-width: 450px;
   margin-top: 124px;
   display: flex;
   flex-direction: column;
@@ -1413,7 +1413,7 @@ body {
   gap: 63px;
   align-items: flex-end;
   margin-top: 139px;
-  margin-left: 181px;
+  margin-left: auto;
 }
 
 .footer-phone-number {
@@ -2319,6 +2319,13 @@ body {
   text-decoration: none;
 }
 
+.new-icon {
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  cursor: pointer;
+}
+
 .card-sign-wrapper {
   display: flex;
   align-items: flex-start;
@@ -2352,23 +2359,15 @@ body {
   text-decoration: none;
 }
 
-.card-hover-new {
-  background-image: url(../images/catalog/new-product-icon.svg);
-  background-repeat: no-repeat;
-  background-position: 273px 27px;
-}
-
-.card-hover-new:hover {
-  background-image: url(../images/catalog/new-product-icon-hover.svg);
-  background-repeat: no-repeat;
-  background-position: 273px 27px;
-}
-
 .card-more-button {
   display: none;
 }
 
 .card-item:hover .card-name {
+  opacity: 0.6;
+}
+
+.card-item:hover .new-icon {
   opacity: 0.6;
 }
 
@@ -2386,6 +2385,10 @@ body {
 }
 
 .card-item:active .card-name, .card-item:active .card-price {
+  opacity: 0.3;
+}
+
+.card-item:active .new-icon {
   opacity: 0.3;
 }
 

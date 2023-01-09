@@ -57,6 +57,7 @@
                       <svg class="tooltip-close-button-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
                         <path fill="#fff" d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z"/>
                       </svg>
+                      <span class="visually-hidden">Удалить товар</span>
                     </button>
                   </li>
                   <li class="basket-products-item">
@@ -67,6 +68,7 @@
                       <svg class="tooltip-close-button-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
                         <path fill="#fff" d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z"/>
                       </svg>
+                      <span class="visually-hidden">Удалить товар</span>
                     </button>
                   </li>
                 </ul>
@@ -151,11 +153,11 @@
               <div class="range-scale">
                 <div class="range-bar">
                   <div class="range-toggle-wrapper range-toggle-wrapper-min">
-                    <button class="range-toggle toggle-min" type="button"></button>
+                    <button class="range-toggle toggle-min" type="button"><span class="visually-hidden">Меньшая цена</span></button>
                   </div>
                   <input class="toggle-sign toggle-sign-min" type="text" placeholder="от 0">
                   <div class="range-toggle-wrapper range-toggle-wrapper-max">
-                    <button class="range-toggle toggle-max" type="button"></button>
+                    <button class="range-toggle toggle-max" type="button"><span class="visually-hidden">Большая цена</span></button>
                   </div>
                   <input class="toggle-sign toggle-sign-max" type="text" placeholder="до 5000">
                 </div>
@@ -166,35 +168,35 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="black" checked>
+                    <input class="control-input visually-hidden" type="checkbox" name="color" value="black" checked>
                     <span class="control-mark"></span>
                     Черный
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="white" checked>
+                    <input class="control-input visually-hidden" type="checkbox" name="color" value="white" checked>
                     <span class="control-mark"></span>
                     Белый
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="blue">
+                    <input class="control-input visually-hidden" type="checkbox" name="color" value="blue">
                     <span class="control-mark"></span>
                     Синий
                   </label>
                 </li>
                 <li>
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="red">
+                    <input class="control-input visually-hidden" type="checkbox" name="color" value="red">
                     <span class="control-mark"></span>
                     Красный
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="pink">
+                    <input class="control-input visually-hidden" type="checkbox" name="color" value="pink">
                     <span class="control-mark"></span>
                     Розовый
                   </label>
@@ -243,6 +245,10 @@
                 <a class="card-hover" href="#">
                   <span class="button card-more-button">Подробнее</span>
                 </a>
+                <svg class="new-icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60">
+                  <circle cx="30" cy="30" r="29" stroke="#000" stroke-opacity=".6" stroke-width="2"/>
+                  <path fill="#000" fill-opacity=".6" d="M13.563 28.316V34h-2.296v-9.94h1.82l4.606 5.852V24.06h2.296V34h-1.876l-4.55-5.684Zm18.113 3.668V34H24.69v-9.94h6.86v2.016h-4.564v1.932h3.92v1.862h-3.92v2.114h4.69Zm7.471-7.91h2.114l1.036 3.178 1.036-3.178h2.128l-1.694 4.62 1.008 2.646 2.492-7.28h2.506L45.895 34h-1.988l-1.61-3.892L40.701 34H38.7l-3.864-9.94h2.492l2.506 7.28.98-2.646-1.666-4.62Z"/>
+                </svg>
                 <img class="card-image" src="./images/catalog/product-1.png" width="360" height="380" alt="Любительская селфи-палка.">
                 <div class="card-sign-wrapper">
                   <b class="card-name">Любительская<br>селфи-палка</b>
@@ -253,6 +259,10 @@
                 <a class="card-hover" href="#">
                   <span class="button card-more-button">Подробнее</span>
                 </a>
+                <svg class="new-icon visually-hidden" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60">
+                  <circle cx="30" cy="30" r="29" stroke="#000" stroke-opacity=".6" stroke-width="2"/>
+                  <path fill="#000" fill-opacity=".6" d="M13.563 28.316V34h-2.296v-9.94h1.82l4.606 5.852V24.06h2.296V34h-1.876l-4.55-5.684Zm18.113 3.668V34H24.69v-9.94h6.86v2.016h-4.564v1.932h3.92v1.862h-3.92v2.114h4.69Zm7.471-7.91h2.114l1.036 3.178 1.036-3.178h2.128l-1.694 4.62 1.008 2.646 2.492-7.28h2.506L45.895 34h-1.988l-1.61-3.892L40.701 34H38.7l-3.864-9.94h2.492l2.506 7.28.98-2.646-1.666-4.62Z"/>
+                </svg>
                 <img class="card-image" src="./images/catalog/product-2.png" width="360" height="380" alt="Профессиональная селфи-палка.">
                 <div class="card-sign-wrapper">
                   <b class="card-name">Профессиональная<br>селфи-палка</b>
@@ -263,6 +273,10 @@
                 <a class="card-hover" href="#">
                   <span class="button card-more-button">Подробнее</span>
                 </a>
+                <svg class="new-icon  visually-hidden" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60">
+                  <circle cx="30" cy="30" r="29" stroke="#000" stroke-opacity=".6" stroke-width="2"/>
+                  <path fill="#000" fill-opacity=".6" d="M13.563 28.316V34h-2.296v-9.94h1.82l4.606 5.852V24.06h2.296V34h-1.876l-4.55-5.684Zm18.113 3.668V34H24.69v-9.94h6.86v2.016h-4.564v1.932h3.92v1.862h-3.92v2.114h4.69Zm7.471-7.91h2.114l1.036 3.178 1.036-3.178h2.128l-1.694 4.62 1.008 2.646 2.492-7.28h2.506L45.895 34h-1.988l-1.61-3.892L40.701 34H38.7l-3.864-9.94h2.492l2.506 7.28.98-2.646-1.666-4.62Z"/>
+                </svg>
                 <img class="card-image" src="./images/catalog/product-3.png" width="360" height="380" alt="Непотопляемая селфи-палка.">
                 <div class="card-sign-wrapper">
                   <b class="card-name">Непотопляемая<br>селфи-палка</b>
@@ -273,6 +287,10 @@
               <a class="card-hover" href="#">
                 <span class="button card-more-button">Подробнее</span>
               </a>
+              <svg class="new-icon  visually-hidden" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60">
+                <circle cx="30" cy="30" r="29" stroke="#000" stroke-opacity=".6" stroke-width="2"/>
+                <path fill="#000" fill-opacity=".6" d="M13.563 28.316V34h-2.296v-9.94h1.82l4.606 5.852V24.06h2.296V34h-1.876l-4.55-5.684Zm18.113 3.668V34H24.69v-9.94h6.86v2.016h-4.564v1.932h3.92v1.862h-3.92v2.114h4.69Zm7.471-7.91h2.114l1.036 3.178 1.036-3.178h2.128l-1.694 4.62 1.008 2.646 2.492-7.28h2.506L45.895 34h-1.988l-1.61-3.892L40.701 34H38.7l-3.864-9.94h2.492l2.506 7.28.98-2.646-1.666-4.62Z"/>
+              </svg>
               <img class="card-image" src="./images/catalog/product-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной».">
                 <div class="card-sign-wrapper">
                   <b class="card-name">Селфи-палка «Следуй за мной»</b>
