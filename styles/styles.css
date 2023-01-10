@@ -42,7 +42,9 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 100%;
+  min-width: 1200px;
 }
 
 .button {
@@ -904,7 +906,6 @@ body {
 }
 
 .delivery-section-wrapper {
-  width: 1440px;
   margin: 0 auto;
   min-height: 328px;
   box-sizing: border-box;
@@ -1001,7 +1002,6 @@ body {
 }
 
 .about-wrapper {
-  width: 1440px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
@@ -1900,7 +1900,6 @@ body {
 
 .header-inner-wrapper {
   margin: 0 auto;
-  width: 1160px;
 }
 
 .catalog-title {
@@ -1954,12 +1953,10 @@ body {
 }
 
 .main-section {
-  width: 100%;
   background-color: #F0F0F0;
 }
 
 .products-wrapper {
-  width: 1160px;
   margin: 0 auto;
   display: flex;
   padding-top: 15px;
