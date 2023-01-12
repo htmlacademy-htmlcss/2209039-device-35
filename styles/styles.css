@@ -42,7 +42,6 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 100%;
   min-width: 1200px;
 }
@@ -792,6 +791,7 @@ body {
   justify-content: flex-start;
   margin-top: 49px;
   margin-left: 39px;
+  margin-bottom: 7px;
 }
 
 .feature {
@@ -903,9 +903,12 @@ body {
 .delivery {
   margin-top: 141px;
   background: linear-gradient(to bottom, #ffffff 0 40px, #F0F0F0 40px 66%, #ffffff 66% 100%);
+  width: 100%;
+  min-width: 1440px;
 }
 
 .delivery-section-wrapper {
+  width: 1440px;
   margin: 0 auto;
   min-height: 328px;
   box-sizing: border-box;
@@ -1002,6 +1005,7 @@ body {
 }
 
 .about-wrapper {
+  width: 1440px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
@@ -1112,12 +1116,13 @@ body {
 
 .subscribe {
   width: 100%;
+  min-width: 1440px;
   background-color: #F0F0F0;
 }
 
 .subscribe-section-wrapper {
   box-sizing: border-box;
-  width: 1440px;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1246,6 +1251,7 @@ body {
 }
 
 .page-footer {
+  min-width: 1440px;
   padding-top: 3px;
   padding-bottom: 61px;
   width: 100%;
@@ -1258,7 +1264,6 @@ body {
   margin: 0 auto;
   max-width: 1440px;
   display: flex;
-  align-items: center;
   min-height: 265px;
   padding: 0 140px;
 }
@@ -1313,7 +1318,7 @@ body {
 
 .navigation-social {
   max-width: 450px;
-  margin-top: 124px;
+  margin-top: 131px;
   display: flex;
   flex-direction: column;
   gap: 56px;
@@ -1791,7 +1796,7 @@ body {
 }
 
 .delivery-aside {
-  width: 25%
+  width: 287px;
 }
 
 .delivery-navigation-list {
@@ -1807,7 +1812,7 @@ body {
   height: calc(100% + 126px);
   background-color: var(--main-title-color);
   position: absolute;
-  top: -33%;
+  top:-63px;
   right: 0;
 }
 
@@ -1818,7 +1823,7 @@ body {
   padding: 0;
   text-align: center;
   margin-bottom: 36px;
-  width: calc(100% - 129px);
+  width: calc(100% - 123px);
 }
 
 .delivery-navigation-current-item {
@@ -1843,7 +1848,7 @@ body {
 
 .delivery-paragraph-wrapper {
   position: relative;
-  margin-left: 113px;
+  margin-left: 116px;
 }
 
 .delivery-paragraph-wrapper::after {
@@ -1900,6 +1905,7 @@ body {
 
 .header-inner-wrapper {
   margin: 0 auto;
+  width: 1160px;
 }
 
 .catalog-title {
@@ -1953,10 +1959,12 @@ body {
 }
 
 .main-section {
+  width: 100%;
   background-color: #F0F0F0;
 }
 
 .products-wrapper {
+  width: 1160px;
   margin: 0 auto;
   display: flex;
   padding-top: 15px;
