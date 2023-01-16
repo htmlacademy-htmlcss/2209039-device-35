@@ -171,7 +171,7 @@
                     </button>
                   </div>
                   <label class="visually-hidden" for="toggle-sign-max">Максимальная цена</label>
-                  <input class="toggle-sign toggle-sign-max" id="toggle-sign-min" name="max-price" type="text" placeholder="до 5000">
+                  <input class="toggle-sign toggle-sign-max" id="toggle-sign-max" name="max-price" type="text" placeholder="до 5000">
                 </div>
               </div>
             </div>
@@ -239,20 +239,20 @@
           </section>
           <div class="product-catalog-wrapper">
             <section class="sorting">
-          <h3 class="sorting-title">сортировка:</h3>
-          <select class="select-control">
-            <option value="popular">Популярные</option>
-            <option value="expensive">Дорогие</option>
-            <option value="cheap">Дешевые</option>
-          </select>
-          <div class="sort-button-container">
-            <a class="sort-button" type="button" href="#">
-              <span class="visually-hidden">Сортировка сначала.</span>
-            </a>
-            <a class="sort-button sort-button-down" type="button">
-              <span class="visually-hidden">Сортировка с конца.</span>
-            </a>
-          </div>
+              <h3 class="sorting-title">сортировка:</h3>
+              <select class="select-control" name="sorting" aria-label="Сортировка.">
+                <option value="popular">Популярные</option>
+                <option value="expensive">Дорогие</option>
+                <option value="cheap">Дешевые</option>
+              </select>
+              <div class="sort-button-container">
+                <a class="sort-button" href="#">
+                  <span class="visually-hidden">Сортировка сначала.</span>
+                </a>
+                <a class="sort-button sort-button-down" href="#">
+                  <span class="visually-hidden">Сортировка с конца.</span>
+                </a>
+              </div>
             </section>
             <section class="cards">
           <h3 class="visually-hidden">Карточки товаров</h3>
